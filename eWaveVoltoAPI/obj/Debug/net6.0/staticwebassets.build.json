@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "6hUjO+PSz0T8aqKkG4Z9KQoFmPukl2j3FIg8C33FitU=",
+  "Source": "eWaveVolvoAPI",
+  "BasePath": "_content/eWaveVolvoAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

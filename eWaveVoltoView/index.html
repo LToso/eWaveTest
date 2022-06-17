@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/requestApi.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/page.css">
+    <link rel="stylesheet" type="text/css" href="style/list.css">
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="row">
+            <div class="page-title">
+                <span class="page-title">Cadastro/Alteração de Caminhões</span>
+            </div>
+            <div>
+                <input type="hidden" id="txID"/>
+                <div class="flex-item">
+                    <span>Modelo</span>
+                    <span>
+                        <select name="models" id="txModelo">
+                            <option value="FH">FH</option>
+                            <option value="FM">FM</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="flex-item">
+                    <span>Ano do Modelo</span>
+                    <span><input type="number" id="txAnoModelo"></span>
+                </div>
+                <div class="flex-item">
+                    <span>Ano de Produção</span>
+                    <span><input type="number" id="txAnoProd"></span>
+                </div>
+                <div class="flex-item">
+                    <span>Tamanho</span>
+                    <span><input type="number" id="txTamanho"></span>
+                </div>
+                <div class="flex-item">
+                    <span>Peso Bruto</span>
+                    <span><input type="number" id="txPesoBruto"></span>
+                </div>
+                <div class="flex-item">
+                    <span>Eixos</span>
+                    <span><input type="number" id="txEixos"></span>
+                </div>
+                <div class="flex-item">
+                    <span>Capacidade de Carga</span>
+                    <span><input type="number" id="txCapacCarga"></span>
+                </div>
+                <div class="flex-item">
+                    <span class="submit" id="btnGravar">Gravar</span>
+                    <span class="delete" id="btnExcluir">Excluir</span>
+                    <span class="clear" id="btnLimpar">Limpar</span>
+                </div>
+            </div>
+            <div class="page-title">
+                <span>Lista de Caminhões</span>
+            </div>
+            <div>
+                <table id="listTab" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>
+                                <span>ID</span>
+                            </th>
+                            <th>
+                                Modelo
+                            </th>
+                            <th>
+                                Ano do Modelo
+                            </th>
+                            <th>
+                                Ano de Produção
+                            </th>
+                            <th>
+                                Tamanho
+                            </th>
+                            <th>
+                                Peso Bruto
+                            </th>
+                            <th>
+                                Eixos
+                            </th>
+                            <th>
+                                Cap. de Carga
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="listBody">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
