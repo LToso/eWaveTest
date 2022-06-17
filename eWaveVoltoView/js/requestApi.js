@@ -127,8 +127,9 @@ async function send() {
 
 async function remove(id) {
 
-    if (!id) {
+    if (!id || id == '-1') {
         alert("Nenhum registro selecionado.");
+		return;
     }
 
     let data = {
